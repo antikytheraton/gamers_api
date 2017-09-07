@@ -1,0 +1,34 @@
+Este es un ejercicio para conocer que tanto pueden legar a scrapear una pagina y como pueden mostrar los datos en un Json
+
+Se necesita:
+    * Generar una url para los juegos de playstation 4  -> Link: https://www.gamershop.com.mx/collections/juegos-ps4?page=1
+        - Ejemplo de como podria quedar al url : "http://localhost:800/play/1/
+    * Generar una url para los juegos de xbox one -> Link: https://www.gamershop.com.mx/collections/juegos-one?page=1
+        -- Ejemplo de como podria quedar al url : "http://localhost:800/xbox/1/
+    * Las urls tienen paginacion asi que el envio de datos es dinamico y las url que generen tambien deben de contener el numero
+    de pagina de gamershop
+    * se necesita enviar en un json lo siguiente
+        -nombre del juego
+        -precio
+        -url de la imagen
+    
+    Ejemplo:
+    {
+
+    results:[
+        {
+            'nombre':'Grand theft Auto V',
+            'precio':$1099,
+            'imagen_url':'url de la imagenº'
+        },
+        ...
+
+    ]
+    }
+
+    Para hacer lo siguiente pueden utilizar el ejmplo de este hilo de stackoverflow
+    https://stackoverflow.com/questions/2428092/creating-a-json-response-using-django-and-python
+    
+
+
+
